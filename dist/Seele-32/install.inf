@@ -1,0 +1,70 @@
+; Seele Pixel 32 cursor scheme. Right-click this file and choose Install.
+; Then open Mouse Properties > Pointers, pick "Seele Pixel 32" and click Apply.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%Normal%,%10%\%CUR_DIR%\%Help%,%10%\%CUR_DIR%\%Working%,%10%\%CUR_DIR%\%Busy%,%10%\%CUR_DIR%\%Precision%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Handwriting%,%10%\%CUR_DIR%\%Unavailable%,%10%\%CUR_DIR%\%Vertical%,%10%\%CUR_DIR%\%Horizontal%,%10%\%CUR_DIR%\%Diagonal1%,%10%\%CUR_DIR%\%Diagonal2%,%10%\%CUR_DIR%\%Move%,%10%\%CUR_DIR%\%Normal%,%10%\%CUR_DIR%\%Link%,%10%\%CUR_DIR%\%Person%,%10%\%CUR_DIR%\%Person%"
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors","Scheme Source",0x00010001,1
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%Normal%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%Help%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\%Working%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\%Busy%"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\%Precision%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%Text%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%Handwriting%"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\%Unavailable%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%Vertical%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%Horizontal%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%Diagonal1%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%Diagonal2%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%Move%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%Normal%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%Link%"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,"%10%\%CUR_DIR%\%Person%"
+HKCU,"Control Panel\Cursors",Person,0x00020000,"%10%\%CUR_DIR%\%Person%"
+
+[Scheme.Cur]
+Normal.cur
+Help.cur
+Working.ani
+Busy.ani
+Text.cur
+Link.cur
+Unavailable.cur
+Handwriting.cur
+Person.cur
+Precision.cur
+Move.cur
+Horizontal.cur
+Vertical.cur
+Diagonal1.cur
+Diagonal2.cur
+
+[Strings]
+CUR_DIR     = "Cursors\Seele Pixel 32"
+SCHEME_NAME = "Seele Pixel 32"
+Normal      = "Normal.cur"
+Help        = "Help.cur"
+Working     = "Working.ani"
+Busy        = "Busy.ani"
+Text        = "Text.cur"
+Link        = "Link.cur"
+Unavailable = "Unavailable.cur"
+Handwriting = "Handwriting.cur"
+Person      = "Person.cur"
+Precision   = "Precision.cur"
+Move        = "Move.cur"
+Horizontal  = "Horizontal.cur"
+Vertical    = "Vertical.cur"
+Diagonal1   = "Diagonal1.cur"
+Diagonal2   = "Diagonal2.cur"

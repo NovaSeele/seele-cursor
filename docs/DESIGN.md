@@ -85,3 +85,20 @@ Windows có 17 vai trò con trỏ. File #9 dùng chung cho Person và Location (
 3. Ghép 15 ô và xuất ảnh xem trước dạng lưới 3×5.
 4. Ghi `.cur`/`.ani` bằng Python, đặt đúng điểm click: `.cur` dùng header kiểu ICO (type = 2, hotspot nằm ở trường planes/bitcount); `.ani` dùng RIFF `ACON` (`anih`, `rate`, `LIST fram`).
 5. Viết `install.inf` gán đủ 17 vai trò trong registry. Người dùng tự cài thử trên Windows (phiên cloud chạy Linux nên không thử cài được).
+
+## Tiến độ
+
+Cập nhật 2026-10-23 (phiên cloud). Phiên cloud không tải được ảnh tham khảo từ wiki Bilibili (proxy chặn), nên đầu Seele được vẽ theo mô tả và bảng màu ở trên.
+
+- [x] Bước 1: đầu gốc 22×22 + 9 biểu cảm (`smile`, `curious`, `sleepy`, `blink`, `happy`, `teary`, `focused`, `blush`, `determined`). Bản nháp vòng 1, **chờ duyệt**: `preview/expressions.png`.
+- [x] Bước 2: các hình con trỏ (`src/shapes.py`).
+- [x] Bước 3: lưới 3×5 `preview/cursors.png`; `preview/hotspots.png` đánh dấu điểm click bằng ô đỏ; `preview/actual-32.png`, `actual-48.png` là cỡ thật trên nền trắng/xám/đen; `busy.gif`, `working.gif` là khung động.
+- [x] Bước 4: `.cur` (BMP 32 bit có alpha + mặt nạ AND) và `.ani` (`anih`, `rate` khi các khung khác nhịp, `LIST fram`). Có test đọc ngược lại.
+- [x] Bước 5: `install.inf` gán đủ 17 vai trò. **Chưa thử cài trên Windows.**
+
+Còn lại:
+
+- Duyệt đầu và biểu cảm, sửa 2–3 vòng.
+- Bản 48 px đang phóng nearest-neighbour ×1.5 nên viền chỗ dày 1 px, chỗ 2 px; cần sửa tay hoặc vẽ riêng.
+- #5 Text đang dùng đầu cỡ thường; thiết kế ghi "đầu nhỏ" nhưng chưa vẽ bản nhỏ.
+- Alternate select (UpArrow) đang dùng lại #1.
